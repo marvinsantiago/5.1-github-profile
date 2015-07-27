@@ -1,0 +1,16 @@
+@import 'reset';
+$fa-font-path:        "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
+
+@import 'font-awesome';
+@import 'bourbon';
+@import 'neat';
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// Your SASS Journey Starts Here

@@ -4,12 +4,49 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="app.css"/>
 
     <title>Github Profile</title>
-
 </head>
 <body>
+<nav>
+    <div class="top-left">
+        <i class="fa fa-github"></i>
+        <input type="text">
+        <a href="https://github.com/pulls">Pull Requests</a>
+        <a href="https://github.com/issues">Issues</a>
+        <a href="https://gist.github.com/">Gist</a>
+    </div>
+    <div class="top-right">
+        <a href="https://github.com/notifications"><i class="fa fa-inbox"></i></a>
+        <a href="https://github.com/new"><i class="fa fa-plus"></i></a>
+        <a href="https://github.com/santiagomarvin"><img src="https://avatars0.githubusercontent.com/u/11640772?v=3&s=40" alt="View Profile and more"></a>
+    </div>
+</nav>
 
+<section class="user"></section>
+<section class="repo"></section>
+
+<template id="user-profile">
+    <article>
+        <h3> {{ name }} </h3>
+        <h3> {{ login }} </h3>
+        <h3> {{ location }} </h3>
+        <h3> {{ email }} </h3>
+        <h3> {{ created_at }}</h3>
+
+    </article>
+</template>
+
+<template id="repos">
+    <article>
+        <h3> {{ name }} </h3>
+
+    </article>
+</template>
+
+<script src="jquery/dist/jquery.min.js"></script>
+<script src="handlebars/handlebars.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

@@ -15,7 +15,7 @@ var includePaths = [
 ];
 
 var vendor = funnel('bower_components', {
-  files: ['jquery/dist/jquery.min.js']
+  files: ['handlebars/handlebars.js', 'jquery/dist/jquery.min.js']
 });
 
 var compiledCss = sass (includePaths, 'app.scss', 'app.css');
