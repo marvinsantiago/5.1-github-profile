@@ -64,7 +64,7 @@
                 <li><a href="https://github.com/blog">Blog</a></li>
                 <li><a href="https://github.com/about">About</a></li>
             </ul>
-            <a href="https://github.com/"><i class="fa fa-github"></i></a>
+            <a class="bottom-logo" href="https://github.com/"><i class="fa fa-github"></i></a>
             <ul class="links-left">
                 <li>&copy; 2015 Github, Inc.</li>
                 <li><a href="https://github.com/site/terms">Terms</a></li>
@@ -77,21 +77,34 @@
 
 
 <template id="user-profile">
-    <article>
-        <h3> {{ name }} </h3>
+    <div class="profile">
+        <img src=" {{ avatar_url }}" alt="photo">
+        <h2> {{ name }} </h2>
         <h3> {{ login }} </h3>
-        <h3> {{ location }} </h3>
-        <h3> {{ email }} </h3>
-        <h3> {{ created_at }}</h3>
-
-    </article>
+    </div>
+    <div class="stats">
+        <h3><i class="fa fa-map-marker"></i> {{ location }} </h3>
+        <h3><i class="fa fa-envelope-o"></i> {{ email }} </h3>
+        <h3><i class="fa fa-clock-o"></i>Joined on {{ created_at }}</h3>
+    </div>
+    <div class="followers">
+        <a href="{{ followers_url }}"><span>{{ followers }}</span><span>Followers</span></a>
+        <a href="{{ starred_url }}"><span>0</span><span>Starred</span></a>
+        <a href="{{ following_url }}"><span>{{ following }}</span><span>Following</span></a>
+    </div>
 </template>
 
-<template id="repos">
-    <article>
-        <h3> {{ name }} </h3>
-
+<template id="repo">
+{{#each this as |repo|}}
+    <article class="repo-info">
+        <a href=" {{ repo.html_url }} "><h3> {{ repo.name }} </h3></a>
+        <p class="repo-description">{{ repo.description }}</p>
+        <p class="repo-updated">{{ repo.updated }}</p>
+        <p class="repo-language"> {{ repo.language }}</p>
+        <p class="repo-stars">{{ repo.stargazers_count }}</p>
+        <p class="repo-forks">{{ repo.forks_count }}</p>
     </article>
+{{/each}}
 </template>
 
 <script src="jquery/dist/jquery.min.js"></script>
