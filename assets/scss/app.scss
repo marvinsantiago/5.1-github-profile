@@ -14,3 +14,105 @@ html {
 }
 
 // Your SASS Journey Starts Here
+body {
+    font-family: $helvetica;
+    background-color: #ffffff;
+    color: #888888;
+}
+a {
+    text-decoration: none;
+}
+.outer-container {
+    @include outer-container(980px);
+    position: relative;
+}
+
+.top {
+    background-color: #F5F5F5;
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #E5E5E5;
+    a {
+        color: black;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    a:hover {
+        color: #4078C0;
+    }
+}
+.top-left {
+    display: inline-block;
+    width: 65%;
+    line-height: 48px;
+    a {
+        margin-right: 10px;
+    }
+}
+.top-left .fa-github {
+    font-size: 2.4em;
+    line-height: 50px;
+}
+.top-search {
+    border-radius: 3px;
+    border: 1px solid #DDDDDD;
+    font-size: .8em;
+    font-weight: 300;
+    margin-right: 10px;
+    padding: .5em;
+    width: 350px;
+}
+.top-search {
+    position: relative;
+    top: -7px;
+}
+.top-right {
+    position: absolute;
+    right: 0;
+    top: 16%;
+    width: 30%;
+    text-align: right;
+    img {
+        border-radius: 3px;
+        height: 20px;
+        position: relative;
+        top: 5px;
+        width: 20px;
+        margin-right: 5px;
+    }
+    a {
+        margin-right: 2%;
+    }
+}
+.top-right .fa-caret-down {
+    font-size: .8em;
+}
+
+.nav-bottom .outer-container {
+    border-top: 1px solid #E5E5E5;
+    margin-top: 3em;
+}
+.nav-bottom {
+    text-align: center;
+    padding-bottom: 2em;
+}
+.links-right li, .links-left li {
+    display: inline-block;
+}
+.links-left {
+    float: left;
+    font-size: .8em;
+    margin-top: 3em;
+    padding: 0;
+}
+.links-right {
+    float: right;
+    font-size: .8em;
+    margin-top: 3em;
+}
+.links-left a, .links-right a {
+        margin-right: 8px;
+        color: #729BD0;
+    }
+
+

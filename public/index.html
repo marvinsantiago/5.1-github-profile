@@ -9,23 +9,72 @@
     <title>Github Profile</title>
 </head>
 <body>
-<nav>
-    <div class="top-left">
-        <i class="fa fa-github"></i>
-        <input type="text">
-        <a href="https://github.com/pulls">Pull Requests</a>
-        <a href="https://github.com/issues">Issues</a>
-        <a href="https://gist.github.com/">Gist</a>
-    </div>
-    <div class="top-right">
-        <a href="https://github.com/notifications"><i class="fa fa-inbox"></i></a>
-        <a href="https://github.com/new"><i class="fa fa-plus"></i></a>
-        <a href="https://github.com/santiagomarvin"><img src="https://avatars0.githubusercontent.com/u/11640772?v=3&s=40" alt="View Profile and more"></a>
+<nav class="top">
+    <div class="outer-container">
+        <div class="top-left">
+            <i class="fa fa-github"></i>
+            <input type="text" class="top-search" placeholder="Search Github">
+            <a href="https://github.com/pulls">Pull Requests</a>
+            <a href="https://github.com/issues">Issues</a>
+            <a href="https://gist.github.com/">Gist</a>
+        </div>
+        <div class="top-right">
+            <a href="https://github.com/notifications"><i class="fa fa-inbox"></i></a>
+            <a href="https://github.com/new"><i class="fa fa-plus"></i></a>
+            <a href="https://github.com/santiagomarvin"><img src="https://avatars0.githubusercontent.com/u/11640772?v=3&s=40" alt="View Profile and more"></a>
+        </div>
     </div>
 </nav>
 
-<section class="user"></section>
-<section class="repo"></section>
+    <div class="outer-container">
+        <section class="user"></section>
+        <section class="main-content">
+            <nav class="middle-top">
+                <div class="middle-top-tabs">
+                    <a href="#"><i class="octicon octicon-diff-added"></i> Contributions</a>
+                    <a href="#"><i class="octicon octicon-repo"></i> Repositories</a>
+                    <a href="#"><i class="octicon octicon-rss"></i> Public activity</a>
+                </div>
+                <button><i class="fa fa-pencil"></i> Edit Profile</button>
+            </nav>
+            <nav class="repo-row">
+                <div class="repo-search">
+                    <input type="text" placeholder="Find a repository...">
+                    <button>Search</button>
+                </div>
+                <div class="repo-links">
+                    <a href="#">All</a>
+                    <a href="#">Public</a>
+                    <a href="#">Sources</a>
+                    <a href="#">Forks</a>
+                    <a href="#">Mirrors</a>
+                    <button> New</button>
+                </div>
+                <div class="repo"></div>
+            </nav>
+        </section>
+    </div>
+    <footer class="nav-bottom">
+        <div class="outer-container">
+            <ul class="links-right">
+                <li><a href="https://status.github.com">Status</a></li>
+                <li><a href="https://developer.github.com">API</a></li>
+                <li><a href="https://training.github.com">Training</a></li>
+                <li><a href="https://shop.github.com">Shop</a></li>
+                <li><a href="https://github.com/blog">Blog</a></li>
+                <li><a href="https://github.com/about">About</a></li>
+            </ul>
+            <a href="https://github.com/"><i class="fa fa-github"></i></a>
+            <ul class="links-left">
+                <li>&copy; 2015 Github, Inc.</li>
+                <li><a href="https://github.com/site/terms">Terms</a></li>
+                <li><a href="https://github.com/site/privacy">Privacy</a></li>
+                <li><a href="https://github.com/security">Security</a></li>
+                <li><a href="https://github.com/contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
 
 <template id="user-profile">
     <article>
