@@ -17,7 +17,7 @@ $.ajax({
   success: userHasLoaded
 });
 
-var repoTemplate = templateByQuery('#repos');
+var repoTemplate = templateByQuery('#repo');
 
 var repoHasLoaded = function(data) {
   var result = repoTemplate(data);
