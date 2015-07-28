@@ -100,10 +100,12 @@
         <a href=" {{ repo.html_url }} "><h3> {{ repo.name }} </h3></a>
         <p class="repo-description">{{ repo.description }}</p>
         <p class="repo-updated">{{ repo.updated }}</p>
+    </article>
+    <div class="repo-stats">
         <p class="repo-language"> {{ repo.language }}</p>
         <p class="repo-stars">{{ repo.stargazers_count }}</p>
         <p class="repo-forks">{{ repo.forks_count }}</p>
-    </article>
+    </div>
 {{/each}}
 </template>
 
