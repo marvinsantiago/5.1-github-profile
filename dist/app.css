@@ -1944,6 +1944,33 @@ a {
   .profile img {
     border-radius: 5px;
     width: 100%; }
+  .profile h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.4em;
+    font-weight: bold; }
+
+.stats {
+  border-bottom: 1px solid #DDDDDD;
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.4em; }
+  .stats h3 {
+    margin-bottom: 5px; }
+
+.followers {
+  overflow: auto;
+  position: relative;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+  .followers a {
+    float: left;
+    margin: 0 10px; }
+  .followers span {
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center; }
 
 .main-content {
   float: left;
@@ -1980,9 +2007,53 @@ a {
   padding-bottom: 10px;
   color: black; }
 
+.middle-top button {
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+  float: right;
+  font-weight: bold;
+  padding: 0.3em 0.8em;
+  position: relative;
+  font-size: 0.8em; }
+
+.repo-row {
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 1em; }
+
+.repo-search {
+  width: 45%;
+  display: inline-block; }
+
+.repo-links {
+  width: 55%;
+  display: inline-block;
+  font-size: 0.9em;
+  text-align: right; }
+  .repo-links a {
+    color: blue;
+    margin-right: 6px; }
+  .repo-links button {
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    color: #ffffff;
+    padding: 0.5em 0.8em; }
+
+.repo-search {
+  border-radius: 3px;
+  font-size: 0.8em;
+  padding: 0.6em;
+  width: 240px; }
+  .repo-search button {
+    border-radius: 3px;
+    border: 1px solid #DDDDDD;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 0.6em 1em; }
+
 #repo {
   position: relative;
-  border-bottom: 1px solid #E5E5E5; }
+  border-bottom: 1px solid #E5E5E5;
+  padding: 0.6em 0; }
 
 .repo-info {
   display: inline-block;
@@ -1999,6 +2070,15 @@ a {
 
 .repo-updated {
   font-size: .75em; }
+
+.repo-stats {
+  font-size: 0.75em;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 24%; }
+  .repo-stats p {
+    display: inline-block; }
 
 .repo-forks {
   font-size: .8em; }
