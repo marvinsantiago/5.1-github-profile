@@ -1,3 +1,4 @@
+// Grab plug-ins
 var merge = require('broccoli-merge-trees');
 var sass = require('broccoli-sass');
 var funnel = require('broccoli-funnel');
@@ -14,8 +15,9 @@ var includePaths = [
     'bower_components/jquery'
 ];
 
+// Funneling the files only need
 var vendor = funnel('bower_components', {
-  files: ['handlebars/handlebars.js', 'jquery/dist/jquery.min.js']
+  files: ['handlebars/handlebars.min.js', 'jquery/dist/jquery.min.js']
 });
 
 var compiledCss = sass (includePaths, 'app.scss', 'app.css');
