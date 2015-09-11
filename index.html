@@ -38,10 +38,10 @@
                 <button><i class="fa fa-pencil"></i> Edit Profile</button>
             </nav>
             <nav class="repo-row">
-                <div class="repo-search">
+<!--                 <div class="repo-search"> -->
                     <input type="text" placeholder="Find a repository...">
                     <button>Search</button>
-                </div>
+<!--                 </div> -->
                 <div class="repo-links">
                     <a href="#">All</a>
                     <a href="#">Public</a>
@@ -64,7 +64,7 @@
                 <li><a href="https://github.com/blog">Blog</a></li>
                 <li><a href="https://github.com/about">About</a></li>
             </ul>
-            <a class="bottom-logo" href="https://github.com/"><i class="fa fa-github"></i></a>
+                <a class="bottom-logo" href="https://github.com/"><i class="fa fa-github"></i></a>
             <ul class="links-left">
                 <li>&copy; 2015 Github, Inc.</li>
                 <li><a href="https://github.com/site/terms">Terms</a></li>
@@ -84,7 +84,7 @@
     </div>
     <div class="stats">
         <h3><i class="fa fa-map-marker"></i> {{ location }} </h3>
-        <h3><i class="fa fa-envelope-o"></i> {{ email }} </h3>
+        <h3><i class="fa fa-envelope-o"></i> <a href="{{ email}}">{{ email}}</a></h3>
         <h3><i class="fa fa-clock-o"></i>Joined on {{ created_at }}</h3>
     </div>
     <div class="followers">
@@ -101,16 +101,16 @@
         <p class="repo-description">{{ repo.description }}</p>
         <p class="repo-updated">{{ repo.updated }}</p>
     </article>
-    <div class="repo-stats">
+<!--     <div class="repo-stats">
         <p class="repo-language"> {{ repo.language }}</p>
         <p class="repo-stars">{{ repo.stargazers_count }}</p>
         <p class="repo-forks">{{ repo.forks_count }}</p>
-    </div>
+    </div> -->
 {{/each}}
 </template>
 
 <script src="jquery/dist/jquery.min.js"></script>
-<script src="handlebars/handlebars.js"></script>
+<script src="handlebars/handlebars.min.js"></script>
 <script src="app.js"></script>
 <!-- livereload snippet -->
 <script>document.write('<script src="http://'
